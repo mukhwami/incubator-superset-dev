@@ -80,7 +80,7 @@ PACKAGE_JSON_FILE = os.path.join(BASE_DIR, "static", "assets", "package.json")
 #     "type": "image/png"
 #     "rel": "icon"
 # },
-FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
+FAVICONS = [{"href": "/static/assets/images/aza-fav.png"}]
 
 
 def _try_json_readversion(filepath: str) -> Optional[str]:
@@ -194,7 +194,7 @@ PROXY_FIX_CONFIG = {"x_for": 1, "x_proto": 1, "x_host": 1, "x_port": 1, "x_prefi
 APP_NAME = "Superset"
 
 # Uncomment to setup an App icon
-APP_ICON = "/static/assets/images/superset-logo-horiz.png"
+APP_ICON = "/static/assets/images/aza-logo.png"
 APP_ICON_WIDTH = 126
 
 # Uncomment to specify where clicking the logo would take the user
@@ -275,19 +275,19 @@ BABEL_DEFAULT_FOLDER = "superset/translations"
 LANGUAGES = {
     "en": {"flag": "us", "name": "English"},
     "es": {"flag": "es", "name": "Spanish"},
-    "it": {"flag": "it", "name": "Italian"},
+    # "it": {"flag": "it", "name": "Italian"},
     "fr": {"flag": "fr", "name": "French"},
-    "zh": {"flag": "cn", "name": "Chinese"},
-    "ja": {"flag": "jp", "name": "Japanese"},
+    # "zh": {"flag": "cn", "name": "Chinese"},
+    # "ja": {"flag": "jp", "name": "Japanese"},
     "de": {"flag": "de", "name": "German"},
     "pt": {"flag": "pt", "name": "Portuguese"},
-    "pt_BR": {"flag": "br", "name": "Brazilian Portuguese"},
+    # "pt_BR": {"flag": "br", "name": "Brazilian Portuguese"},
     "ru": {"flag": "ru", "name": "Russian"},
-    "ko": {"flag": "kr", "name": "Korean"},
+    # "ko": {"flag": "kr", "name": "Korean"},
 }
 # Turning off i18n by default as translation in most languages are
 # incomplete and not well maintained.
-LANGUAGES = {}
+# LANGUAGES = {}
 
 # ---------------------------------------------------
 # Feature flags
